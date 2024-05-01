@@ -1,0 +1,174 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d3f3d3; /* Light green background */
+}
+
+header {
+    background-color: #58a858; /* Dark green header */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    background-image: url('header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    background-color: #7ab97a; /* Medium green navigation */
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #e0f7e0; /* Light green section background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    font-family: Garamond, serif; /* Change font for headings to Garamond */
+}
+
+section h2 {
+    color: #333;
+}
+
+section p {
+    color: #666;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.image-gallery img {
+    width: 300px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #58a858; /* Dark green footer */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* To make the images look cooler */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.image-gallery img {
+    width: 300px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: transform 0.3s ease-in-out; /* Add transition effect */
+}
+
+/* Scale up the image on hover */
+.image-gallery img:hover {
+    transform: scale(1.2); /* Increase the scale factor for enlargement */
+}
+
+
+
+/* to create an album with the images */
+.image-gallery {
+    display: flex;
+    flex-wrap: nowrap; /* Ensure all images are in one line */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    justify-content: flex-start; /* Start from the first image */
+    margin-top: 20px;
+}
+
+.image-gallery img {
+    width: 200px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: transform 0.3s ease-in-out; /* Add transition effect */
+}
+
+/* Scale up the image on hover */
+.image-gallery img:hover {
+    transform: scale(1.1); /* Increase the scale factor on hover */
+}
+
+
+/* to create a slide-window of the images */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.slideshow-container img {
+    display: none; /* Hide all images initially */
+    width: 100%;
+}
+
+/* Position the arrows */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+/* Style the arrows */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* to put an image as background on the up part of the site*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('image10.jpg'); /* Replace 'your-background-image.jpg' with the path to your background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: top; /* Position the background image at the top */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    background-color: #d3f3d3; /* Fallback background color */
+}
+
+/* Rest of your CSS styles */
